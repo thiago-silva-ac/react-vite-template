@@ -185,22 +185,14 @@ export default {
       {
         jsc: {
           parser: {
-            syntax: "typescript",
-            tsx: true,
-            decorators: true,
+            syntax: 'typescript',
+            jsx: true,
           },
-          keepClassNames: true,
           transform: {
-            legacyDecorator: true,
-            decoratorMetadata: true,
             react: {
-              runtime: "automatic",
+              runtime: 'automatic',
             },
           },
-        },
-        module: {
-          type: "es6",
-          noInterop: false,
         },
       },
     ],

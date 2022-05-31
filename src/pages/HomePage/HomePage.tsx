@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '../../assets/logo.svg';
 import './HomePage.css';
+import { APP_TITLE } from '../../constants/environment';
 
 function HomePage() {
   const [count, setCount] = useState(0);
@@ -9,7 +10,7 @@ function HomePage() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>Hello Vite + React!</p>
+        <p>{APP_TITLE}</p>
         <p>
           <button type='button' onClick={() => setCount((count) => count + 1)}>
             count is: {count}
