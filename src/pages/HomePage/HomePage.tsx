@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import logo from '../../assets/logo.svg'
-import './HomePage.css'
+import { useState } from 'react';
+import logo from '../../assets/logo.svg';
+import './HomePage.css';
 
 function HomePage() {
   const [count, setCount] = useState(0);
@@ -39,7 +39,7 @@ function HomePage() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
 export default HomePage;

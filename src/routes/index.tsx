@@ -1,5 +1,5 @@
-import { useRoutes } from 'react-router-dom'
-import HomePage from '../pages/HomePage'
+import { useRoutes } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
 
 export default function RenderRouter() {
   return useRoutes([
@@ -7,5 +7,5 @@ export default function RenderRouter() {
       path: '/',
       element: <HomePage />,
     },
-  ])
+  ]);
 }

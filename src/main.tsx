@@ -1,22 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter } from 'react-router-dom';
 import RenderRouter from './routes';
 import './styles/index.css';
 
-const container = document.getElementById('root')
-const root = ReactDOM.createRoot(container as HTMLDivElement)
+export const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnMount: false,
+      refetchOnReconnect: true,
+    },
+  },
+});
 
-function App() {
-  return (
-    <BrowserRouter>
-        <RenderRouter />
-    </BrowserRouter>
-  )
-}
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container as HTMLDivElement);
 
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <RenderRouter />
+      </BrowserRouter>
+    </QueryClientProvider>
   </React.StrictMode>,
 );
