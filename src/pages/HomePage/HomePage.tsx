@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import logo from './assets/logo.svg';
-import './App.css';
+import { useState } from 'react'
+import logo from '../../assets/logo.svg'
+import './HomePage.css'
 
-function App() {
+function HomePage() {
   const [count, setCount] = useState(0);
 
   return (
@@ -39,7 +39,7 @@ function App() {
         </p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default HomePage;
