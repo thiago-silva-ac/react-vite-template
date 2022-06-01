@@ -9,3 +9,5 @@
 - Tesing Library
 - Eslint
 - Prettier
+- Husky
+- lint-staged
