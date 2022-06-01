@@ -11,3 +11,5 @@
 - Prettier
 - Husky
 - lint-staged
+- Cypress
+- Storybook

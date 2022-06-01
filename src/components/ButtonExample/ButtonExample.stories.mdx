@@ -1,0 +1,48 @@
+import { Meta, ArgsTable, Canvas, Story } from '@storybook/addon-docs';
+import ButtonExample from './ButtonExample';
+
+<Meta title='Components/ButtonExample' component={ButtonExample} />
+
+export const Template = (args) => <ButtonExample {...args} />;
+
+# Button example
+
+<ArgsTable of={ButtonExample} />
+
+<Canvas>
+  <Story
+    name='Primary'
+    args={{
+      primary: true,
+      label: 'Button',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Secondary'
+    args={{
+      label: 'Button',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Large'
+    args={{
+      size: 'large',
+      label: 'Button',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Small'
+    args={{
+      size: 'small',
+      label: 'Button',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
