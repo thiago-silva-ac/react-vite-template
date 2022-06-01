@@ -10,7 +10,7 @@ function HomePage() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>{APP_TITLE}</p>
+        <p data-testid='title'>{APP_TITLE}</p>
         <p>
           <button type='button' onClick={() => setCount((count) => count + 1)}>
             count is: {count}
