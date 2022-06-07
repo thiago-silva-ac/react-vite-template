@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+    react-nginx:
+      build:
+        context: ./
+        dockerfile: docker/Dockerfile
+      expose:
+        - 80
+      ports:
+        - 8080:80
