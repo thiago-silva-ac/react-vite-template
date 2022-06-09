@@ -10701,6 +10701,11 @@ react-element-to-jsx-string@^14.3.4:
     is-plain-object "5.0.0"
     react-is "17.0.2"
 
+react-hook-form@^7.31.3:
+  version "7.31.3"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.31.3.tgz#b61bafb9a7435f91695351a7a9f714d8c4df0121"
+  integrity sha512-NVZdCWViIWXXXlQ3jxVQH0NuNfwPf8A/0KvuCxrM9qxtP1qYosfR2ZudarziFrVOC7eTUbWbm1T4OyYCwv9oSQ==
+
 react-inspector@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-5.1.1.tgz#58476c78fde05d5055646ed8ec02030af42953c8"
@@ -10729,6 +10734,13 @@ react-merge-refs@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
   integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
+
+react-number-format@^4.9.3:
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/react-number-format/-/react-number-format-4.9.3.tgz#338500fe9c61b1ac73c8d6dff4ec97dd13fd2b50"
+  integrity sha512-am1A1xYAbENuKJ+zpM7V+B1oRTSeOHYltqVKExznIVFweBzhLmOBmyb1DfIKjHo90E0bo1p3nzVJ2NgS5xh+sQ==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-query@^3.39.1:
   version "3.39.1"

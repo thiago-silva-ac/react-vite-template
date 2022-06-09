@@ -17,10 +17,15 @@ export default {
   // clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  // collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: undefined,
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{ts,tsx}',
+    '!**/*.d.ts',
+    '!**/node_modules/**',
+    '!<rootDir>/src/constants/**',
+  ],
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
@@ -31,7 +36,7 @@ export default {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -90,7 +95,7 @@ export default {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^.+\\.(css|sass|scss|less)$': 'identity-obj-proxy',
-    "^.+\\.(jpg|jpeg|png|gif|webp|avif|svg|ttf|woff|woff2)$": 'jest-transform-stub',
+    '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg|ttf|woff|woff2)$': 'jest-transform-stub',
   },
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -137,7 +142,7 @@ export default {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -146,7 +151,7 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -180,8 +185,8 @@ export default {
   // },
 
   transform: {
-    "^.+\\.(t|j)sx?$": [
-      "@swc/jest",
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
       {
         jsc: {
           parser: {
